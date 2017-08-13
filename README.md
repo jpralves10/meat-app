@@ -1,28 +1,38 @@
 # MeatApp
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.2.6.
+### Inicializações Ambiente Dev
 
-## Development server
+Starter service: `ng serve` ou `npm start`
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+Mocking backend: `json-server db.json`
 
-## Code scaffolding
+### Instalar Complementos
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|module`.
+Instalar [admin-lte](https://www.npmjs.com/package/admin-lte)
+`npm install --save admin-lte` //is a fully responsive admin template. Based on Bootstrap 3 framework
 
-## Build
+Instalar [font-awesome](https://www.npmjs.com/package/font-awesome)
+`npm install --save font-awesome` //675 pictographic icons for easy scalable vector graphics on websites
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `-prod` flag for a production build.
+Instalar [web-animations-js](https://www.npmjs.com/package/web-animations-js)
+`npm install --save web-animations-js` //API that provides Web Animation features in browsers that do not support it natively
 
-## Running unit tests
+Instalar [intl](https://www.npmjs.com/package/intl)
+`npm install --save intl` //This specification provides the framework to bring long overdue localization methods to ECMAScript implementations
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+Instalar [jquery](https://www.npmjs.com/package/jquery)
+`npm install --save jquery` //jQuery is a fast, small, and feature-rich JavaScript library.
 
-## Running end-to-end tests
+Instalar [reflect-metadata](https://www.npmjs.com/package/reflect-metadata)
+`npm install reflect-metadata` //A number of use cases (Composition/Dependency Injection, Runtime Type Assertions, Reflection/Mirroring, Testing) want the ability to add additional metadata to a class in a consistent manner.
 
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-Before running the tests make sure you are serving the app via `ng serve`.
+### Observações Importantes
 
-## Further help
+Email Regex: `/^(([^<>()\[\]\.,;:\s@\"]+(\.[^<>()\[\]\.,;:\s@\"]+)*)|(\".+\"))@(([^<>()[\]\.,;:\s@\"]+\.)+[^<>()[\]\.,;:\s@\"]{2,})$/i`
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+Number Regex:
+`/^[0-9]*$/`
+
+## Créditos
+
+jpralves all rights copyright@
