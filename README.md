@@ -26,6 +26,9 @@ Instalar [jquery](https://www.npmjs.com/package/jquery)
 Instalar [reflect-metadata](https://www.npmjs.com/package/reflect-metadata)
 `npm install reflect-metadata` //A number of use cases (Composition/Dependency Injection, Runtime Type Assertions, Reflection/Mirroring, Testing) want the ability to add additional metadata to a class in a consistent manner.
 
+Instalar [ts-helpers](https://www.npmjs.com/package/ts-helpers)
+`npm install ts-helpers` //Typescript helpers for compiling typescript while specifying '--noEmitHelpers' within your 'tsconfig.json'.
+
 ### Observações Importantes
 
 Email Regex: `/^(([^<>()\[\]\.,;:\s@\"]+(\.[^<>()\[\]\.,;:\s@\"]+)*)|(\".+\"))@(([^<>()[\]\.,;:\s@\"]+\.)+[^<>()[\]\.,;:\s@\"]{2,})$/i`
