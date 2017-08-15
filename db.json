@@ -370,5 +370,22 @@
       "restaurantId": "tasty-treats"
     }
   ],
-  "orders": [ ]
+  "orders": [
+    {
+      "name": "Maria",
+      "email": "maria@teste.com",
+      "emailConfirmation": "maria@teste.com",
+      "address": "av. presidente prudente",
+      "number": "101",
+      "optionalAddress": "Apto 3",
+      "paymentOptions": "MON",
+      "orderItems": [
+        {
+          "menuId": "bread",
+          "quantity": 3
+        }
+      ],
+      "id": 1
+    }
+  ]
 }
