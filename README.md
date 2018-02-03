@@ -2,7 +2,11 @@
 
 ### Inicializações Ambiente Dev
 
+Instalar [Angular CLI](https://cli.angular.io/)
+
 Starter service: `ng serve` ou `npm start`
+
+Instalar [Json Server](https://www.npmjs.com/package/json-server)
 
 Mocking backend: `json-server db.json`
 
@@ -28,6 +32,21 @@ Instalar [reflect-metadata](https://www.npmjs.com/package/reflect-metadata)
 
 Instalar [ts-helpers](https://www.npmjs.com/package/ts-helpers)
 `npm install ts-helpers` //Typescript helpers for compiling typescript while specifying '--noEmitHelpers' within your 'tsconfig.json'.
+
+### Utilizando Git e GitHub
+
+Após Instalar: 
+`$ git config --global user.name "Jean Alves"`
+`$ git config --global user.email "jpralves10@gmail.com"`
+
+Projeto Novo:
+`$ git init`
+
+
+Mudando Status:
+
+
+
 
 ### Observações Importantes
 
