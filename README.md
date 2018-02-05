@@ -16,11 +16,15 @@ Navigate to `http://localhost:3000/`
 
 ### Generate Component
 
-Run `ng generate component component-name` or `ng generate directive|pipe|service|class|guard|interface|enum|module`
+`ng generate component component-name` <br/>
+`ng generate directive|pipe|service|class|guard|interface|enum|module` <br/>
+`ng g c component-name --spec=false`
 
 ### Build
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `-prod` flag for a production build
+Run `ng build` to build the project. <br/>
+The build artifacts will be stored in the `dist/` directory. <br/>
+Use the `-prod` flag for a production build
 
 ### Instalar Complementos
 
@@ -67,7 +71,7 @@ Criar Novo Repositório: <br/>
 `git push -u origin master`
 
 Push Repositório Existente <br/>
-`git remote add origin https://github.com/jpralves10/meat-app.git` <br/>
+`git remote set-url origin https://github.com/jpralves10/meat-app.git` <br/>
 `git push -u origin master`
 
 Mudando Status e Comitando: <br/>
@@ -76,6 +80,8 @@ Mudando Status e Comitando: <br/>
 `git commit -am "Arquivos comitados"` <br/>
 `git log` <br/>
 `git push origin master`
+
+fatal: remote origin already exists.
 
 ### Observações Importantes
 
