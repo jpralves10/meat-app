@@ -1,10 +1,14 @@
 import { BrowserModule } from '@angular/platform-browser';
-import { NgModule, LOCALE_ID } from '@angular/core';
-import { HttpModule } from '@angular/http';
+import { NgModule, LOCALE_ID, ErrorHandler } from '@angular/core';
+import { HttpClientModule } from '@angular/common/http';
 import { RouterModule, PreloadAllModules } from '@angular/router';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations'
 //import { LocationStrategy, HashLocationStrategy } from '@angular/common'
+
+import { registerLocaleData } from '@angular/common';
+import localePT from '@angular/common/locales/pt';
+registerLocaleData(localePT);
 
 import {ROUTES} from './app.routes'
 
@@ -21,6 +25,9 @@ import { ReviewsComponent } from './restaurant-detail/reviews/reviews.component'
 import { ShoppingCartComponent } from './restaurant-detail/shopping-cart/shopping-cart.component';
 
 import { SharedModule } from './shared/shared.module';
+import { LoginComponent } from './security/login/login.component';
+import { UserDetailComponent } from './header/user-detail/user-detail.component';
+import { AplicationErrorHandler } from './app.error-handler';
 
 @NgModule({
   declarations: [
@@ -34,18 +41,21 @@ import { SharedModule } from './shared/shared.module';
     MenuComponent,
     MenuItemComponent,
     ReviewsComponent,
-    ShoppingCartComponent
+    ShoppingCartComponent,
+    LoginComponent,
+    UserDetailComponent
   ],
   imports: [
     BrowserModule,
     BrowserAnimationsModule,
-    HttpModule,
+    HttpClientModule,
     SharedModule.forRoot(),
     RouterModule.forRoot(ROUTES, {preloadingStrategy: PreloadAllModules})
   ],
   providers: [
     //{provide: LocationStrategy, useClass: HashLocationStrategy},
-    {provide: LOCALE_ID, useValue: 'pt-BR'}
+    {provide: LOCALE_ID, useValue: 'pt'},
+    {provide: ErrorHandler, useClass: AplicationErrorHandler}
   ],
   bootstrap: [AppComponent]
 })

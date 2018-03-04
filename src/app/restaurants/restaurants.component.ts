@@ -33,7 +33,7 @@ import {Observable} from 'rxjs/Observable'
 })
 export class RestaurantsComponent implements OnInit {
 
-  restaurants: Restaurant[]
+  restaurants: Restaurant[] = []
 
   searchBarState = 'hidden'
 
@@ -46,7 +46,6 @@ export class RestaurantsComponent implements OnInit {
   ) { }
 
   ngOnInit() {
-
     this.searchControl = this.fb.control('')
     this.searchForm = this.fb.group({
       searchControl: this.searchControl
