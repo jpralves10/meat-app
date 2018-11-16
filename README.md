@@ -97,8 +97,6 @@ Instalar [nodemon](https://www.npmjs.com/package/nodemon)
 
 *Push Repositório Existente* <br/>
 `git remote set-url origin https://github.com/jpralves10/meat-app.git` <br/>
-ou <br/>
-`git remote add orgin https://github.com/jpralves10/meat-app.git` <br/>
 `git push -u origin master`
 
 *Mudando Status e Comitando:* <br/>
@@ -107,8 +105,6 @@ ou <br/>
 `git commit -am "Arquivos comitados"` <br/>
 `git log` <br/>
 `git push origin master`
-
-fatal: remote origin already exists.
 
 ## Observações Importantes
 
