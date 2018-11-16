@@ -24,11 +24,14 @@ Command compiler `tsc -w`
 `ng generate directive|pipe|service|class|guard|interface|enum|module` <br/>
 `ng g c component-name --spec=false`
 
-## Build
+## Compilar e Testar
 
-Run `ng build` to build the project. <br/>
-The build artifacts will be stored in the `dist/` directory. <br/>
-Use the `-prod` flag for a production build
+*1. Compilar (--extract-css=false evita erros de css)* <br/>
+`ng build --prod --extract-css=false` 
+
+*2. Testar Projeto Compilado* <br/>
+`cd dist/` <br/>
+`python -m SimpleHTTPServer 8080`
 
 ## Google Chrome Dev Tools
 
@@ -134,15 +137,6 @@ Instalar [nodemon](https://www.npmjs.com/package/nodemon)
 `Chrome Settings > Show advanced settings > HTTPS/SSL > Manage Certificates`
 
 [Use a SHA-2 instead of SHA-1 certificate in PingFederate](https://ping.force.com/Support/PingIdentityArticle?id=kA340000000GsCdCAK)
-
-## Compilar e Testar
-
-*1. Compilar (--extract-css=false evita erros de css)
-`ng build --prod --extract-css=false` 
-
-*2. Testar Projeto Compilado
-`cd dist/`
-`python -m SimpleHTTPServer 8080`
 
 ## Créditos
 
