@@ -104,7 +104,7 @@ Instalar [nodemon](https://www.npmjs.com/package/nodemon)
 `git add .` <br/>
 `git commit -am "Arquivos comitados"` <br/>
 `git log` <br/>
-`git push origin master`
+`git push origin master` ou `git push -f origin master` 
 
 ## Observações Importantes
 
