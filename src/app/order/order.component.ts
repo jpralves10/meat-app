@@ -1,6 +1,7 @@
 import {Component, OnInit} from '@angular/core';
-import {FormGroup, FormBuilder, Validators, Validator, AbstractControl} from '@angular/forms'
+import {FormGroup, FormBuilder, Validators, Validator, AbstractControl, FormControl} from '@angular/forms'
 import {Router} from '@angular/router'
+import {tap} from 'rxjs/operators'
 
 import {OrderService} from './order.service'
 import {RadioOption} from '../shared/radio/radio-option.model'
@@ -35,15 +36,29 @@ export class OrderComponent implements OnInit {
   ) { }
 
   ngOnInit() {
-    this.orderForm = this.formBuilder.group({
-      name: ['', Validators.compose([Validators.required, Validators.minLength(5)])],
-      email: ['', Validators.compose([Validators.required, Validators.pattern(this.emailPattern)])],
-      emailConfirmation: ['', Validators.compose([Validators.required, Validators.pattern(this.emailPattern)])],
-      address: ['', Validators.compose([Validators.required, Validators.minLength(5)])],
-      number: ['', Validators.compose([Validators.required, Validators.pattern(this.numberPattern)])],
-      optionalAddress: '',
-      paymentOptions: ['', Validators.required]
-    }, {validator: OrderComponent.equalsTo})
+    this.orderForm = new FormGroup({
+      name: new FormControl ('', {
+        validators: [Validators.required, Validators.minLength(5)]
+      }),
+      email: new FormControl ('', {
+        validators: [Validators.required, Validators.pattern(this.emailPattern)]
+      }),
+      emailConfirmation: new FormControl ('', {
+        validators: [Validators.required, Validators.pattern(this.emailPattern)]
+      }),
+      address: new FormControl ('', {
+        validators: [Validators.required, Validators.minLength(5)]
+      }),
+      number: new FormControl ('', {
+        validators: [Validators.required, Validators.pattern(this.numberPattern)]
+      }),
+      optionalAddress: new FormControl ('', {
+        //
+      }),
+      paymentOptions: new FormControl ('', {
+        validators: [Validators.required]
+      }),
+    }, {validators: [OrderComponent.equalsTo], updateOn: 'blur'})
   }
 
   static equalsTo(group: AbstractControl): {[key:string]: boolean}{
@@ -87,9 +102,9 @@ export class OrderComponent implements OnInit {
         .map((item: CartItem) => new OrderItem(item.menuItem.id, item.quantity))
 
     this.orderService.checkOrder(order)
-    .do((orderId:string) => {
-      this.orderId = orderId
-    })
+    .pipe(
+      tap((orderId:string) => {this.orderId = orderId })
+    )
     .subscribe((orderId: string) => {
       this.router.navigate(['/order/order-summary'])
       this.orderService.clear()

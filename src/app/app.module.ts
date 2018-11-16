@@ -4,11 +4,11 @@ import { HttpClientModule } from '@angular/common/http';
 import { RouterModule, PreloadAllModules } from '@angular/router';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations'
-//import { LocationStrategy, HashLocationStrategy } from '@angular/common'
+import { LocationStrategy, HashLocationStrategy } from '@angular/common'
 
 import { registerLocaleData } from '@angular/common';
 import localePT from '@angular/common/locales/pt';
-registerLocaleData(localePT);
+registerLocaleData(localePT, 'pt');
 
 import {ROUTES} from './app.routes'
 

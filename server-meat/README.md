@@ -54,20 +54,20 @@ Getting Private key
 
 6. Create `server.js` file. Enter the implementation of the simple http server
 
->var express = require("express");
-var https = require("https");
-var server = express();
-var fs = require("fs")
-server.get("/", function(req, res){
-res.send("<'h1>hello<'h2>");
-});
-var options = {
-	key: fs.readFileSync("key.key"),
-	cert: fs.readFileSync("cert.crt")
-}
-https.createServer(options, server).listen(3443, function () {
-    console.log('Server is running on https://localhost:3443');
-});
+>var express = require("express"); <br/>
+var https = require("https"); <br/>
+var server = express(); <br/>
+var fs = require("fs") <br/>
+server.get("/", function(req, res){ <br/>
+res.send("<'h1>hello<'h2>"); <br/>
+}); <br/>
+var options = { <br/>
+	key: fs.readFileSync("key.key"), <br/>
+	cert: fs.readFileSync("cert.crt") <br/>
+} <br/>
+https.createServer(options, server).listen(3443, function () { <br/>
+    console.log('Server is running on https://localhost:3443'); <br/>
+}); <br/>
 
 ### Configuring request Client to Work with Self-Signed Certificate
 
@@ -93,21 +93,21 @@ Enter `httpsrequest.js` for the enty point.
 
 3. Call request() module to perform GET method on https://mockserver.com:3443/ URL.
 
->var request = require("request");
-var fs = require("fs");
-var options = {
-	uri: "https://localhost:3443/",
-	method: "GET",
-	ca: fs.readFileSync("cert.crt")
-};
-request(options, function(err, response, body){
-	if( err ){
-		console.log(err);
-	}else{
-		console.log(response.statusCode);
-		console.log(body);
-	}
-});
+>var request = require("request"); <br/>
+var fs = require("fs"); <br/>
+var options = { <br/>
+	uri: "https://localhost:3443/", <br/>
+	method: "GET", <br/>
+	ca: fs.readFileSync("cert.crt") <br/>
+}; <br/>
+request(options, function(err, response, body){ <br/>
+	if( err ){ <br/>
+		console.log(err); <br/>
+	}else{ <br/>
+		console.log(response.statusCode); <br/>
+		console.log(body); <br/>
+	} <br/>
+}); <br/>
 
 4. Run the program from the terminal window
 `$ node httpsrequest.js`
@@ -143,6 +143,7 @@ request(options, function(err, response, body){
 	<h1>hello<h2>
 	$
 
+**NOTE:** Start Aplication `node server-meat/server`
 
 ## *Créditos*
 

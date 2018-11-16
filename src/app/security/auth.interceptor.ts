@@ -1,7 +1,7 @@
 import { HttpInterceptor } from "@angular/common/http";
 import { HttpRequest } from "@angular/common/http/src/request";
 import { HttpHandler } from "@angular/common/http/src/backend";
-import { Observable } from "rxjs/Observable";
+import { Observable } from "rxjs";
 import { HttpEvent } from "@angular/common/http/src/response";
 import { Injectable } from "@angular/core";
 import { Injector } from "@angular/core";
