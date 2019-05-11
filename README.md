@@ -109,6 +109,10 @@ Instalar [nodemon](https://www.npmjs.com/package/nodemon)
 `git log` <br/>
 `git push origin master` ou `git push -f origin master` 
 
+*Git error: failed to push some refs to ... <br/>
+`git pull --rebase origin master` <br/>
+`git push origin master`
+
 ## Observações Importantes
 
 *Email Regex:* <br/>
