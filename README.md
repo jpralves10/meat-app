@@ -99,6 +99,8 @@ Instalar [nodemon](https://www.npmjs.com/package/nodemon)
 `git push -u origin master`
 
 *Push Repositório Existente* <br/>
+`git remote add origin https://github.com/jpralves10/meat-app.git` <br/>
+`or` <br/>
 `git remote set-url [origin] https://github.com/jpralves10/meat-app.git` <br/>
 `git push -u origin master`
 
