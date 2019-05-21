@@ -100,7 +100,7 @@ Instalar [nodemon](https://www.npmjs.com/package/nodemon)
 `git remote -v` <br/>
 `git push origin master` <br/> 
 
-*Git error: failed to push some refs to ... <br/>
+*Git error: failed to push some refs to ...* <br/>
 `git pull --rebase origin master` <br/>
 `git push origin master`
 
