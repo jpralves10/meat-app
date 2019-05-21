@@ -92,28 +92,23 @@ Instalar [nodemon](https://www.npmjs.com/package/nodemon)
 `Clicar no Botão "New SSH Key"` <br/>
 `Add Título e a Chave`
 
-*Criar Novo Repositório:* <br/>
+*Push Repositório Existente* <br/>
 `git init` <br/>
+`git add .` <br/>
 `git commit -m "first commit"` <br/>
 `git remote add origin https://github.com/jpralves10/meat-app.git` <br/>
-`git push -u origin master`
-
-*Push Repositório Existente* <br/>
-`git remote add origin https://github.com/jpralves10/meat-app.git` <br/>
-`or` <br/>
-`git remote set-url [origin] https://github.com/jpralves10/meat-app.git` <br/>
-`git push -u origin master`
-
-*Mudando Status e Comitando:* <br/>
-`git status` <br/>
-`git add .` <br/>
-`git commit -am "Arquivos comitados"` <br/>
-`git log` <br/>
-`git push origin master` ou `git push -f origin master` 
+`git remote -v` <br/>
+`git push origin master` <br/> 
 
 *Git error: failed to push some refs to ... <br/>
 `git pull --rebase origin master` <br/>
 `git push origin master`
+
+*Status e Comitando:* <br/>
+`git status` <br/>
+`git commit -am "Arquivos comitados"` <br/>
+`git log` <br/>
+`git push origin master` ou `git push -f origin master`
 
 ## Observações Importantes
 
