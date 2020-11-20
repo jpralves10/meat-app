@@ -139,6 +139,24 @@ Instalar [nodemon](https://www.npmjs.com/package/nodemon)
 
 [Use a SHA-2 instead of SHA-1 certificate in PingFederate](https://ping.force.com/Support/PingIdentityArticle?id=kA340000000GsCdCAK)
 
+## Gerar Certificado JDK
+
+### Passo 1 ###
+openssl s_client -connect des-apigateway-binint.mbi.cloud.ihf:443
+
+### Passo 2 ###
+Copiar e colar no certificado.cer
+do -----BEGIN CERTIFICATE-----
+ate -----END CERTIFICATE-----
+
+### Passo 3 ###
+cd C:/Users/naejves/kitdev/jdk1.8.0_111/bin >
+./keytool.exe -keystore C:\Users\naejves\kitdev\jdk1.8.0_111\jre\lib\security\cacerts 
+-import -alias DI4 -file C:/Users/naejves/Desktop/Squad/cacerts/di4.cer
+
+### Passo 4 ###
+Confiar neste certificado? [n$o]: s
+
 ## Créditos
 
 jpralves all rights copyright@
