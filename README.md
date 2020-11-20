@@ -142,6 +142,8 @@ Instalar [nodemon](https://www.npmjs.com/package/nodemon)
 ## Gerar Certificado JDK
 
 ### Passo 1 ###
+openssl s_client -connect {Host}:443
+Exemplo:
 openssl s_client -connect des-apigateway-binint.mbi.cloud.ihf:443
 
 ### Passo 2 ###
