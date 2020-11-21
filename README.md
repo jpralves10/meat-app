@@ -162,7 +162,7 @@ Instalar [nodemon](https://www.npmjs.com/package/nodemon)
 `Confiar neste certificado? [n$o]: s`
 
 ### Passo 5 ###
-*Listar os certificados adicionados:
+*Listar os certificados adicionados: <br/>
 `./keytool.exe -list -keystore C:/Users/naejves/kitdev/jdk1.8.0_111/jre/lib/security/cacerts | grep DI4` <br/>
 *ou <br/>
 `./keytool.exe -list -keystore C:/Users/naejves/kitdev/jdk1.8.0_111/jre/lib/security/cacerts`
