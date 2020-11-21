@@ -153,11 +153,19 @@ Instalar [nodemon](https://www.npmjs.com/package/nodemon)
 
 ### Passo 3 ###
 `cd C:/Users/naejves/kitdev/jdk1.8.0_111/bin >` <br/>
-`./keytool.exe -keystore C:\Users\naejves\kitdev\jdk1.8.0_111\jre\lib\security\cacerts` <br/>
-`-import -alias DI4 -file C:/Users/naejves/Desktop/Squad/cacerts/di4.cer`
+`./keytool.exe -keystore C:/Users/naejves/kitdev/jdk1.8.0_111/jre/lib/security/cacerts` <br/>
+`-import -alias DI4 -file C:/Users/naejves/Desktop/Squad/cacerts/di4.cer` <br/>
+<br/>
+`Senha keystore: changeit`
 
 ### Passo 4 ###
 `Confiar neste certificado? [n$o]: s`
+
+### Passo 5 ###
+*Listar os certificados adicionados:
+`./keytool.exe -list -keystore C:/Users/naejves/kitdev/jdk1.8.0_111/jre/lib/security/cacerts | grep DI4` <br/>
+*ou <br/>
+`./keytool.exe -list -keystore C:/Users/naejves/kitdev/jdk1.8.0_111/jre/lib/security/cacerts`
 
 ## Créditos
 
