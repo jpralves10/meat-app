@@ -110,6 +110,17 @@ Instalar [nodemon](https://www.npmjs.com/package/nodemon)
 `git log` <br/>
 `git push origin master` ou `git push -f origin master`
 
+*Comandos Uteis:* <br/>
+`Atualizar Branch:` <br/>
+`feature-H6182-T7008-T7009 >` <br/>
+`git pull origin develop` <br/>
+
+`Encontrar e Remover Artefato de Commit:` <br/>
+`git reset --soft HEAD~[1..N] (exemplo)` <br/>
+`git reset --soft HEAD~1` <br/>
+`git rm -r src/main/resources/secure-credentials` <br/>
+
+
 ## Observações Importantes
 
 *Email Regex:* <br/>
